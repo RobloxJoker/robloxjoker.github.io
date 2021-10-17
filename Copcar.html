@@ -1,0 +1,99 @@
+<html>
+    <head>
+
+    </head>
+    <body style="background-color:rgb(0, 0, 0);">
+        <video width="500" height="500" loop>
+            <source src="doxs/av/ee.webm" type="video/webm" />
+            
+            Your browser does not support the video tag.
+          </video>
+          <audio><embed name="ykan" src="doxs/av/cream.mp3" loop="false" hidden="true" autostart="true"></audio>
+
+
+            <style>
+                .bg-music{
+                    position: absolute;
+                    top: 64%;
+                    left: 0;
+                    right: o;
+                    margin: 0 auto;
+                }
+                .butn{
+                    background-color: transparent;
+                    color: #fff;
+                    font-size: 78px;
+                    border: none;
+                    display: block;
+                    margin: 0 auto;
+                    opacity: .3;
+                    transition: all linear .2s;
+                }
+                .butn:hover{
+                    opacity: 1;
+                }
+                .fa-pause-circle-o{
+                    display: none;
+                }
+                
+                
+                </style>
+                 <script type="text/javascript">
+                  $ (document).ready(function(){
+                
+                   $(".btn .fa-play-circle-o").on('click',function(){
+                    $(this).hide();
+                    $(".fa-pause-circle-o").fadeIn();
+                      $("#mymusic")[0].play();
+                   });
+                
+                   $(".butn .fa-pause-circle-o").on('click',function(){
+                    $(this).hide();
+                    $(".fa-play-circle-o").fadeIn();
+                      $("#mymusic")[0].pause();
+                   });
+                
+                 });
+                 </script>
+                
+                <div class="bg-music">
+                <audio id="mymusic" src="horse.mp3" loop="">
+                
+                </audio>
+                <button class="butn">
+                <i class="fa fa-play-circle-o"></i>
+                <i class="fa fa-pause-circle-o"></i>
+                </button>
+                
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
