@@ -2,34 +2,56 @@
     <head>
 
     </head>
+
     <body style="background-color:rgb(0, 0, 0);">
+
+<style>
+    .container {
+      height: 200px;
+      position: relative;
      
-         
+    }
+    
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 60%;
+      left: 33%;
+      
+    }
+    </style>
+    
+    <div class="container">
+      <div class="center">
+        <img src="doxs/images/ee.gif" width="500" height="500">
+        
+      </div>
+    </div>
+    
 
 
 
 
 
+    </script>
+    <audio id="audio-player" src="doxs/av/cream2.mp3" >
+    </audio>
+    <script>
+var audioElement= document.getElementById("audio-player");
+function togglePlay() {
+    if (audioElement.paused) {
+        audioElement.play();
+    }
+    else {
+        audioElement.pause();
+    }
+};
+    </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <audio id="audio-player" src="doxs/av/cream2.mp3" >
+    </audio>
+    <button onClick="togglePlay()"; top: 400 ; >ↈ</a>
 
     </body>
 </html>
